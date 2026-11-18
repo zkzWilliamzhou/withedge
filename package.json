@@ -1,0 +1,30 @@
+{
+  "name": "withedge",
+  "version": "0.1.0",
+  "description": "Terminal command boundary control tool. Visualize and audit command execution boundaries.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "analyze": "node dist/cli.js analyze",
+    "visualize": "node dist/cli.js visualize",
+    "audit": "node dist/cli.js audit"
+  },
+  "keywords": ["terminal", "command", "security", "audit", "cli", "nodejs"],
+  "author": "WorkBuddy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
+}
